@@ -1,205 +1,205 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Undangan Mabar Genshin Impact! ⚔️</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0 1rem;
-      font-family: 'Rubik', sans-serif;
-      background: linear-gradient(135deg, #f8a5c2, #74b9ff);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      color: #333;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      min-height: 100vh;
-      text-align: center;
-      overflow-x: hidden;
-      overflow-y: auto;
-      box-sizing: border-box;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Undangan Mabar Genshin Impact! ⚔️</title>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body {
+margin: 0;
+padding: 0 1rem;
+font-family: 'Rubik', sans-serif;
+background: linear-gradient(135deg, #f8a5c2, #74b9ff);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+color: #333;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+min-height: 100vh;
+text-align: center;
+overflow-x: hidden;
+overflow-y: auto;
+box-sizing: border-box;
+}
 
-    .heart {
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      background: red;
-      transform: rotate(-45deg);
-      animation: floatUp 12s linear infinite;
-      opacity: 0.3;
-    }
+.heart {
+position: absolute;
+width: 60px;
+height: 60px;
+background: red;
+transform: rotate(-45deg);
+animation: floatUp 12s linear infinite;
+opacity: 0.3;
+}
 
-    .heart::before,
-    .heart::after {
-      content: '';
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      background: red;
-      border-radius: 50%;
-    }
+.heart::before,
+.heart::after {
+content: '';
+position: absolute;
+width: 60px;
+height: 60px;
+background: red;
+border-radius: 50%;
+}
 
-    .heart::before { top: -30px; left: 0; }
-    .heart::after { top: 0; left: 30px; }
+.heart::before { top: -30px; left: 0; }
+.heart::after { top: 0; left: 30px; }
 
-    @keyframes floatUp {
-      0% { transform: translateY(100vh) rotate(-45deg); }
-      100% { transform: translateY(-120vh) rotate(-45deg); }
-    }
+@keyframes floatUp {
+0% { transform: translateY(100vh) rotate(-45deg); }
+100% { transform: translateY(-120vh) rotate(-45deg); }
+}
 
-    .card {
-      background: white;
-      padding: 2rem;
-      border-radius: 20px;
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-      max-width: 520px;
-      margin: 1rem;
-      animation: fadeIn 2s ease;
-      position: relative;
-      z-index: 10;
-    }
+.card {
+background: white;
+padding: 2rem;
+border-radius: 20px;
+box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+max-width: 520px;
+margin: 1rem;
+animation: fadeIn 2s ease;
+position: relative;
+z-index: 10;
+}
 
-    h1 {
-      font-size: 2.2rem;
-      color: #e84393;
-      margin-bottom: 1rem;
-    }
+h1 {
+font-size: 2.2rem;
+color: #e84393;
+margin-bottom: 1rem;
+}
 
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
-      line-height: 1.6;
-    }
+p {
+font-size: 1.1rem;
+margin-bottom: 1.5rem;
+line-height: 1.6;
+}
 
-    .button {
-      padding: 0.8rem 1.6rem;
-      font-size: 1rem;
-      background: #e84393;
-      color: white;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      text-decoration: none;
-      display: inline-block;
-    }
+.button {
+padding: 0.8rem 1.6rem;
+font-size: 1rem;
+background: #e84393;
+color: white;
+border: none;
+border-radius: 12px;
+cursor: pointer;
+transition: background 0.3s ease;
+text-decoration: none;
+display: inline-block;
+}
 
-    .button:hover { background: #d63072; }
+.button:hover { background: #d63072; }
 
-    .reject-button {
-      padding: 0.8rem 1.6rem;
-      font-size: 1rem;
-      background: #ff0000;
-      color: #fff;
-      border: none;
-      border-radius: 12px;
-      position: absolute;
-      transition: 0.3s;
-      cursor: pointer;
-      touch-action: none;
-    }
+.reject-button {
+padding: 0.8rem 1.6rem;
+font-size: 1rem;
+background: #ff0000;
+color: #fff;
+border: none;
+border-radius: 12px;
+position: absolute;
+transition: 0.3s;
+cursor: pointer;
+touch-action: none;
+}
 
-    .sparkle {
-      position: absolute;
-      pointer-events: none;
-      width: 10px;
-      height: 10px;
-      background: gold;
-      border-radius: 50%;
-      opacity: 0.8;
-      animation: sparkle 1s linear forwards;
-    }
+.sparkle {
+position: absolute;
+pointer-events: none;
+width: 10px;
+height: 10px;
+background: gold;
+border-radius: 50%;
+opacity: 0.8;
+animation: sparkle 1s linear forwards;
+}
 
-    .from {
-      margin-top: 2rem;
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #fff;
-      opacity: 1;
-      transition: opacity 1s ease;
-      margin-bottom: 2rem;
-    }
+.from {
+margin-top: 2rem;
+font-size: 1.2rem;
+font-weight: bold;
+color: #fff;
+opacity: 1;
+transition: opacity 1s ease;
+margin-bottom: 2rem;
+}
 
-    @keyframes sparkle {
-      0% { transform: scale(1); opacity: 1; }
-      100% { transform: scale(2); opacity: 0; }
-    }
+@keyframes sparkle {
+0% { transform: scale(1); opacity: 1; }
+100% { transform: scale(2); opacity: 0; }
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
-    }
-  </style>
+@keyframes fadeIn {
+from { opacity: 0; transform: scale(0.95); }
+to { opacity: 1; transform: scale(1); }
+}
+</style>
 </head>
 <body>
-  <div class="heart" style="left: 15%; animation-delay: 0s;"></div>
-  <div class="heart" style="left: 35%; animation-delay: 2s;"></div>
-  <div class="heart" style="left: 55%; animation-delay: 4s;"></div>
-  <div class="heart" style="left: 75%; animation-delay: 1s;"></div>
-  <div class="heart" style="left: 85%; animation-delay: 3s;"></div>
+<div class="heart" style="left: 15%; animation-delay: 0s;"></div>
+<div class="heart" style="left: 35%; animation-delay: 2s;"></div>
+<div class="heart" style="left: 55%; animation-delay: 4s;"></div>
+<div class="heart" style="left: 75%; animation-delay: 1s;"></div>
+<div class="heart" style="left: 85%; animation-delay: 3s;"></div>
 
-  <div class="card">
-    <h1>Hai, Traveler! ✨</h1>
-    <p>
-      Lelah grinding sendirian? Butuh teman buat farming artifak atau lawan boss mingguan? Tenang, kamu nggak sendirian! 🗺️
-    </p>
-    <p>
-      Kami punya grup mabar Genshin Impact yang seru dan siap bantu kamu menjelajahi Teyvat. Dari Spiral Abyss sampai mancing, kita hadapi bersama!
-    </p>
-    <p>
-      Jadi... mau ikut petualangan bareng kita? 🤩
-    </p>
-    <a href="https://chat.whatsapp.com/CHK7dYda9NKB7OYaysFrwG" target="_blank" class="button" onclick="showSparkles(event)">Yuk, Gabung!</a>
-    <button id="noBtn" class="reject-button" style="top: 70%; left: 60%;">Aku lebih suka main sendiri 🚶</button>
-  </div>
+<div class="card">
+<h1>Hai, Traveler! ✨</h1>
+<p>
+Lelah grinding sendirian? Butuh teman buat farming artifak atau lawan boss mingguan? Tenang, kamu nggak sendirian! 🗺️
+</p>
+<p>
+Kami punya grup mabar Genshin Impact yang seru dan siap bantu kamu menjelajahi Teyvat. Dari Spiral Abyss sampai mancing, kita hadapi bersama!
+</p>
+<p>
+Jadi... mau ikut petualangan bareng kita? 🤩
+</p>
+<a href="https://chat.whatsapp.com/CHK7dYda9NKB7OYaysFrwG" target="_blank" class="button" onclick="showSparkles(event)">Yuk, Gabung!</a>
+<button id="noBtn" class="reject-button" style="top: 70%; left: 60%;">Aku lebih suka main sendiri 🚶</button>
+</div>
 
-  <div class="from" id="senderName">Dari: Koordinator Mabar Genshin</div>
+<div class="from" id="senderName">Dari: Koordinator Mabar Genshin</div>
 
-  <script>
-    const noBtn = document.getElementById('noBtn');
-    const card = document.querySelector('.card');
-    const sender = document.getElementById('senderName');
+<script>
+const noBtn = document.getElementById('noBtn');
+const card = document.querySelector('.card');
+const sender = document.getElementById('senderName');
 
-    function moveButton(e) {
-      const touch = e.touches ? e.touches[0] : e;
-      const buttonWidth = noBtn.offsetWidth;
-      const buttonHeight = noBtn.offsetHeight;
-      const cardRect = card.getBoundingClientRect();
-      const buffer = 100;
-      let x, y;
-      do {
-        x = Math.random() * (card.offsetWidth - buttonWidth);
-        y = Math.random() * (card.offsetHeight - buttonHeight);
-      } while (
-        x > card.offsetWidth / 2 - buffer && x < card.offsetWidth / 2 + buffer &&
-        y > card.offsetHeight - 150
-      );
-      noBtn.style.left = `${x}px`;
-      noBtn.style.top = `${y}px`;
-    }
+function moveButton(e) {
+const touch = e.touches ? e.touches[0] : e;
+const buttonWidth = noBtn.offsetWidth;
+const buttonHeight = noBtn.offsetHeight;
+const cardRect = card.getBoundingClientRect();
+const buffer = 100;
+let x, y;
+do {
+x = Math.random() * (card.offsetWidth - buttonWidth);
+y = Math.random() * (card.offsetHeight - buttonHeight);
+} while (
+x > card.offsetWidth / 2 - buffer && x < card.offsetWidth / 2 + buffer &&
+y > card.offsetHeight - 150
+);
+noBtn.style.left = `${x}px`;
+noBtn.style.top = `${y}px`;
+}
 
-    noBtn.addEventListener('mouseover', moveButton);
-    noBtn.addEventListener('touchstart', moveButton);
+noBtn.addEventListener('mouseover', moveButton);
+noBtn.addEventListener('touchstart', moveButton);
 
-    function showSparkles(e) {
-      for (let i = 0; i < 30; i++) {
-        const sparkle = document.createElement('div');
-        sparkle.className = 'sparkle';
-        sparkle.style.left = `${e.clientX + Math.random() * 40 - 20}px`;
-        sparkle.style.top = `${e.clientY + Math.random() * 40 - 20}px`;
-        document.body.appendChild(sparkle);
-        setTimeout(() => sparkle.remove(), 1000);
-      }
-    }
+function showSparkles(e) {
+for (let i = 0; i < 30; i++) {
+const sparkle = document.createElement('div');
+sparkle.className = 'sparkle';
+sparkle.style.left = `${e.clientX + Math.random() * 40 - 20}px`;
+sparkle.style.top = `${e.clientY + Math.random() * 40 - 20}px`;
+document.body.appendChild(sparkle);
+setTimeout(() => sparkle.remove(), 1000);
+}
+}
 
-    // Script untuk mengganti nama pengirim telah dihapus untuk simplisitas
-  </script>
+// Script untuk mengganti nama pengirim telah dihapus untuk simplisitas
+</script>
 </body>
 </html>
